@@ -1,5 +1,11 @@
 <template>
-  <v-card color="#F8BBD0" class="mx-auto" max-width="400" title="ใบแสดงเมนู">
+  <v-card
+    style="margin-block: 2rem"
+    color="#F8BBD0"
+    class="mx-auto"
+    max-width="400"
+    title="ใบแสดงเมนู"
+  >
     <v-container>
       <v-text-field
         label="ชื่อเมนูไทย"

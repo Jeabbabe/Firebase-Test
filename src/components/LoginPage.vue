@@ -1,5 +1,5 @@
 <template>
-  <v-sheet width="350" class="mx-auto">
+  <v-sheet width="350" class="mx-auto" style="margin-block: 2rem">
     <v-form ref="form">
       <v-text-field label="Email" type="email" v-model="email" />
       <v-text-field label="Password" name="pwd" id="" type="password" v-model="pwd" />
@@ -35,13 +35,13 @@ function login() {
       // Signed in
       const user = userCredential.user;
       console.log("User = " + user);
-      router.push("about");
+      router.push("order");
       // ...
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log(errorCode + errorMessage);
+      alert(errorCode + errorMessage);
     });
 }
 
@@ -57,7 +57,7 @@ function register() {
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log(errorCode + errorMessage);
+      alert(errorCode + errorMessage);
       // ..
     });
 }
@@ -74,7 +74,7 @@ function GoogleLogin() {
       // IdP data available using getAdditionalUserInfo(result)
       // ...
       console.log("token =" + token + "" + user);
-      router.push("about");
+      router.push("order");
     })
     .catch((error) => {
       // Handle Errors here.

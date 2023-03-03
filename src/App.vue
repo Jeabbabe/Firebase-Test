@@ -4,14 +4,6 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <v-layout>
-    <v-system-bar>
-      <v-icon icon="mdi-wifi-strength-4"></v-icon>
-      <v-icon icon="mdi-signal" class="ms-2"></v-icon>
-      <v-icon icon="mdi-battery" class="ms-2"></v-icon>
-
-      <span class="ms-2">3:13PM</span>
-    </v-system-bar>
-
     <v-app-bar color="brown" image="../src/components/images/thai-food10.jpg">
       <template v-slot:image>
         <v-img gradient="to top right, rgba(128,64,0,.8), rgba(92,56,0,.8)"></v-img>
@@ -30,7 +22,7 @@ import { RouterLink, RouterView } from "vue-router";
         </RouterLink>
       </div>
     </v-app-bar>
-    <v-main style="margin-block: 2rem"><RouterView /></v-main>
+    <v-main><RouterView /></v-main>
   </v-layout>
 </template>
 
